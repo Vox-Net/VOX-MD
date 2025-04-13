@@ -1,11 +1,15 @@
-"scripts": {
+{
   "name": "voxmd",
-  "version" : "2.0.0",
-  "start": "pm2-runtime index.js",
-  "stop": "pm2 stop voxmd",
-  "restart": "pm2 restart voxmd",
-  "test": "jest",
-  "lint": "eslint"
+  "version": "2.0.0",
+  "description": "WhatsApp Multi Device Bot",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+   "start": "pm2 start index.js --name voxmd --attach",
+   "stop": "pm2 stop voxmd",
+   "restart": "pm2 restart voxmd",
+   "test": "jest",
+   "lint": "eslint"
 },
   "keywords": [
     "termux",
