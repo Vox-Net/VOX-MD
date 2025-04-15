@@ -8,7 +8,7 @@
     "start": "pm2 start . --attach --name voxmd",
     "docker": "pm2-runtime start . --name voxmd",
     "stop": "pm2 stop voxmd",
-    "postinstall": "node -e \"try { require('sharp') } catch (e) { process.exit(1); }\" || npm add --ignore-engines sharp@0.33.5",
+    "postinstall": "node -e \"try { require('sharp') } catch (e) { process.exit(1); }\" || yarn add --ignore-engines sharp@0.33.5",
     "test": "jest",
     "lint": "eslint"
   },
