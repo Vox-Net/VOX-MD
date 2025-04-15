@@ -1,17 +1,5 @@
-FROM node:18
-
-# Set working directory
-WORKDIR /app
-
-# Copy package.json and install dependencies
-COPY package*.json ./
+FROM quay.io/voxmd/voxmd:latest
+RUN git clone https://github.com/Vox-Net/VOX-MD.git /root/Vox-Net/
+WORKDIR /root/Vox-Net/
 RUN npm install
-
-# Copy the rest of the app
-COPY . .
-
-# Expose port (adjust if your app runs on a different port)
-EXPOSE 8000
-
-# Start the app with experimental fetch support
 CMD ["npm", "start"]
