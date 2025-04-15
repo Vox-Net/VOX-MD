@@ -1,37 +1,4 @@
-# Name of the application
-name: vox-md
-
-# Regions where the service will be deployed
-regions:
-  - fra
-
-services:
-  - name: bot-service
-    type: web
-    ports:
-      - 3000
-
-    # Instance plan, consider using a larger plan if needed
-    instance:
-      plan: nano
-
-    # Environment variables
-    env:
-      - name: NODE_ENV
-        value: production
-
-    # Build commands to install dependencies
-    build:
-      commands:
-        - npm install
-
-    # Run commands to start the service
-    run:
-      commands:
-        - node index.js
-
-    # Consider adding health check configuration
-    health:
-    path: /health
-    interval: 30s
-    timeout: 3s
+healthcheck:
+  path: /
+  interval: 10s
+  timeout: 5s
