@@ -1,20 +1,17 @@
-# Use the official Node.js 14 image as a base image
 FROM node:18
 
-# Set the working directory inside the container
+# Set working directory
 WORKDIR /app
 
-# Copy the package.json and package-lock.json files to the container
+# Copy package.json and install dependencies
 COPY package*.json ./
+RUN npm install
 
-# Install the dependencies
-RUN npm install --production
-
-# Copy the rest of the application code to the container
+# Copy the rest of the app
 COPY . .
 
-# Expose the port the app runs on
-EXPOSE 3000
+# Expose port (adjust if your app runs on a different port)
+EXPOSE 8000
 
-# Define the command to run the app
-CMD ["node", "index.js"]
+# Start the app with experimental fetch support
+CMD ["node", "--experimental-fetch", "index.js"]
