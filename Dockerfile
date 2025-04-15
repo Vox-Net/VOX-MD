@@ -14,4 +14,4 @@ COPY . .
 EXPOSE 8000
 
 # Start the app with experimental fetch support
-CMD ["node", "--experimental-fetch", "index.js"]
+CMD ["npm", "start"]
