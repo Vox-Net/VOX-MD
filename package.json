@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "pm2-runtime index.js --name voxmd ",
+    "start": "pm2 start . --attach --name voxmd",
+    "docker": "pm2-runtime start . --name voxmd",
     "stop": "pm2 stop voxmd",
-    "restart": "pm2 restart voxmd",
     "test": "jest",
     "lint": "eslint"
   },
