@@ -108,7 +108,7 @@
     "url": "https://github.com/vox-Net/VOX-MD/issues"
   },
   "engines": {
-    "node": ">=16.5.0"
+    "node": ">=20.0.0"
   },
   "homepage": "https://github.com/vox-Net/VOX-MD#readme",
   "devDependencies": {
