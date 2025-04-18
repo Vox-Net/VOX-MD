@@ -1,4 +1,4 @@
-const { proto, getContentType, jidNormalizedUser } = require("@whiskeysockets/baileys");
+const { proto, getContentType, jidNormalizedUser } = require("baileys");
 const { readFileSync, readdirSync } = require("fs");
 const path = require("path");
 
