@@ -32,7 +32,7 @@
     "@hapi/boom": "^10.0.0",
     "@shineiichijo/marika": "^3.0.0",
     "@vitalets/google-translate-api": "^9.2.0",
-    "@whiskeysockets/baileys": "latest",
+     "baileys": "git+https://lyfe00011-admin@bitbucket.org/lyfe00011/baileys.git",
     "acrcloud": "^1.4.0",
     "aptoide-scraper": "^1.0.1",
     "awesome-phonenumber": "^2.64.0",
