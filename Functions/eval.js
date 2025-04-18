@@ -1,5 +1,5 @@
 module.exports = async (client, m, Owner, budy, fetchJson, store) => {
-const { proto } = require("@whiskeysockets/baileys");
+const { proto } = require("baileys");
 
 if (budy && budy.startsWith('>')) {
   if (!Owner) return;
