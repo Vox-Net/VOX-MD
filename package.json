@@ -108,6 +108,7 @@
   "bugs": {
     "url": "https://github.com/vox-Net/VOX-MD/issues"
   },
+  "packageManager": "yarn@1.22.22",
   "engines": {
     "node": ">=20.0.0"
   },
